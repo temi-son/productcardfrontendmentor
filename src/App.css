@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+
+
+.App {
+  margin: 10% 30%;
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 10px;
+  height: fit-content;
+  width: fit-content;
+}
+
+#ProductImg {
+  height: 380px;
+  width: auto;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.App section {
+  margin: 30px 30px 0 30px;
+}
+
+button {
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+  background-color: #3D8168;
+  color: white;
+  border: transparent;
+  border-radius: 6px;
+  width: 100%;
+  font-family: Montserrat;
+  font-weight: 500;
+  width: 100%;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+button:hover {
+  background-color: #194132;
+}
+
+.Price {
+  display: flex;
+  column-gap: 20px;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.Discription {
+  font-size: 12px;
+  text-align: left;
+  color: hsl(228, 12%, 48%);
+  padding-bottom: 20px;
+  line-height: 1.5;
+}
+
+.ProductName {
+  font-family: Fraunces;
+  font-weight: 700;
+  font-size: 25px;
+  color: hsl(212, 21%, 14%);
+  padding-bottom: 20px;
+}
+
+.Title {
+  color: hsl(228, 12%, 48%);
+  padding-bottom: 20px;
+}
+
+
+@media screen and (max-width: 419px) {
+  .App {
+    margin: 10% 3%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    height: fit-content;
+    width: fit-content;
+    padding-bottom: 10px;
+  }
+
+  #ProductImg {
+    height: 320px;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0;
+  }
+
+}
